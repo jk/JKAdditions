@@ -17,6 +17,6 @@
 @property (readonly) NSString *enteredText;
 
 -(id)initWithTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate 
- cancelButtonTitle:(NSString *)cancelButtonTitle okButtonTitle:(NSString *)okButtonTitle;
+ cancelButtonTitle:(NSString *)cancelButtonTitle okButtonTitle:(NSString *)okButtonTitle placeholderText:(NSString *)placeholderText;
 
 @end
