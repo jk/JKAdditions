@@ -28,7 +28,6 @@
 		self.textField.autocorrectionType = UITextAutocorrectionTypeNo;
 		self.textField.keyboardType = UIKeyboardTypeEmailAddress;
 		self.textField.placeholder = placeholderText;
-		[theTextField release];
 		CGAffineTransform translate = CGAffineTransformMakeTranslation(0.0, 130.0);
 		[self setTransform:translate];
 	}
@@ -44,11 +43,6 @@
 	return textField.text;
 }
 
-- (void) dealloc
-{
-	[textField release];
-	[super dealloc];
-}
 
 
 @end

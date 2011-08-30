@@ -19,7 +19,7 @@
 @implementation NSDate (JKAdditions)
 
 + (NSDate*)dateWithToday {
-	NSDateFormatter* formatter = [[[NSDateFormatter alloc] init] autorelease];
+	NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
 	formatter.dateFormat = @"yyyy-d-M";
 	
 	NSString* time = [formatter stringFromDate:[NSDate date]];
@@ -28,7 +28,7 @@
 }
 
 - (NSDate*)dateAtMidnight {
-	NSDateFormatter* formatter = [[[NSDateFormatter alloc] init] autorelease];
+	NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
 	formatter.dateFormat = @"yyyy-d-M";
 	
 	NSString* time = [formatter stringFromDate:self];
