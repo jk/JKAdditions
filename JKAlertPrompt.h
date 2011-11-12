@@ -14,7 +14,7 @@
 	UITextField *textField;
 }
 @property (nonatomic, strong) UITextField *textField;
-@property (unsafe_unretained, readonly) NSString *enteredText;
+@property (weak, readonly) NSString *enteredText;
 
 -(id)initWithTitle:(NSString *)title message:(NSString *)message delegate:(id)delegate 
  cancelButtonTitle:(NSString *)cancelButtonTitle okButtonTitle:(NSString *)okButtonTitle placeholderText:(NSString *)placeholderText;
